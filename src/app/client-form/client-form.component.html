@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-8 m-auto">
+  
+      <form [formGroup]="formGroupClient">
+      <div class="mb-3">
+        <div class="display-6 text center">
+          <h1>Cadastro de Clientes</h1>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text" formControlName="name" class="form-control" id="name" placeholder="Nome">
+        <div *ngIf="submitted && name.invalid">
+          <small class="text-danger">Nome Inválido</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" formControlName="email" class="form-control" id="email" placeholder="Email">
+        <div *ngIf="submitted && email.invalid">
+          <small class="text-danger">Email Inválido</small>
+        </div>
+      </div>
+      <button class="btn btn-danger w-50 m-1" (click)="save()">Salvar</button>
+      <button class="btn btn-warning" (click)="clean()" >Limpar</button>
+    </form>
+    </div>
+  
+  
+  </div>

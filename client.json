@@ -1,7 +1,14 @@
 {
-    "clients" : [
-        {"id": 1, "name": "Ana Maria", "email":"ana@gmail.com"},
-        {"id": 2, "name": "Omar", "email":"omar@gmail.com"},
-        {"id": 3, "name": "Ismael", "email":"ismel@gmail.com"}
-    ]
+  "clients": [
+    {
+      "id": 4,
+      "name": "Tobias",
+      "email": "Tobiasdroga@pescoco.fino"
+    },
+    {
+      "id": 6,
+      "name": "Macaco",
+      "email": "golira@moon.key"
+    }
+  ]
 }

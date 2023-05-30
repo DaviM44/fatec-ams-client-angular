@@ -1,10 +1,13 @@
+
+<app-client-form [client]="client"
+(saveEvent)="OnSaveEvent($event)"></app-client-form>
 <table class="table table-striped">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">ID</th>
         <th scope="col">Nome</th>
         <th scope="col">Email</th>
+        <th scope="col">Opções</th>
       </tr>
     </thead>
     <tbody>
@@ -12,6 +15,11 @@
         <th scope="row">{{client.id}}</th>
         <td>{{client.name}}</td>
         <td>{{client.email}}</td>
+        <td>
+          <button class="btn btn-secondary me-1" (click)="edit(client)">Editar</button>
+          <button class="btn btn-secondary me-1" (click)="delete(client)" >Excluir</button>
+          
+        </td>
       </tr>
     </tbody>
   </table>
